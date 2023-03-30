@@ -10,12 +10,28 @@ package ejercicio2github;
  * @author Sofia
  */
 public class Perro {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+   // atributos
+   String nombre;
+   int edad;
+   String raza;
+   
+   // constructor
+   public Perro(String nombre, int edad, String raza) {
+      this.nombre = nombre;
+      this.edad = edad;
+      this.raza = raza;
+   }
+   
+   // métodos
+   public void ladrar() {
+      System.out.println("¡Guau, guau!");
+   }
+   
+   public void correr() {
+      System.out.println("El perro está corriendo.");
+   }
+   
+   public void dormir() {
+      System.out.println("El perro está durmiendo.");
+   }
 }
